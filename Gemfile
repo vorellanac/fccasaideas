@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.2'
 
 # customs gem
 gem 'devise'
+gem 'dotenv-rails' 
 
 
 # Use jquery as the JavaScript library

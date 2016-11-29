@@ -29,7 +29,7 @@ class FichacortaController < ApplicationController
 
     respond_to do |format|
       if @fichacortum.save
-        format.html { redirect_to @fichacortum, notice: 'Fichacortum was successfully created.' }
+        format.html { redirect_to @fichacortum, notice: 'Material actualizado correctamente!.' }
         format.json { render :show, status: :created, location: @fichacortum }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class FichacortaController < ApplicationController
   def update
     respond_to do |format|
       if @fichacortum.update(fichacortum_params)
-        format.html { redirect_to @fichacortum, notice: 'Fichacortum was successfully updated.' }
+        format.html { redirect_to @fichacortum, notice: 'Material actualizado correctamente!.' }
         format.json { render :show, status: :ok, location: @fichacortum }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class FichacortaController < ApplicationController
   def destroy
     @fichacortum.destroy
     respond_to do |format|
-      format.html { redirect_to fichacorta_url, notice: 'Fichacortum was successfully destroyed.' }
+      format.html { redirect_to fichacorta_url, notice: 'Material eliminado correctamente!' }
       format.json { head :no_content }
     end
   end
